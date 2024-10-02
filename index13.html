@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+ 
+ /* **responsive** div{
+     background-color: blue;
+     width: 200px;
+     height: 200px;
+  }
+
+ @media(max-width :900px){
+  div{
+     background-color: rgb(224, 8, 8);
+     width: 100px;
+     height: 100px;
+  }
+ }
+
+ @media(max-width :750px){
+  div{
+     background-color:pink;
+     width: 150px;
+     height: 150px;
+  }
+ }*/
+
+ .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+ }
+ .first {
+    grid-column: span 2;
+ }
+
+ .card {
+    background-color: blue;
+ }
+
+ @media(max-width:680px){
+ .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 200px 200px 100px 200px;
+    gap: 30px;
+ }
+ .lak{
+        grid-column: span 2;
+ }
+ }
+
+
+  </style>
+
+</head>
+<body>
+    
+<div class="grid-container">
+    <div class="first card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="lak card"></div>
+    <div class="lak card"></div>
+</div>
+
+</body>
+</html>
